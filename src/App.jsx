@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-d
 
 import AdminNavbar from "./components/adminNav/AdminNavbar";
 import AddItemPage from "./pages/addItem/AddItem";
-import ListItemsPage from "./pages/Listitems/ListItems";
+import ListItemsPage from "./pages/List-items/ListItems";
 import OrdersPage from "./pages/orderPage/OrderPage";
 import LoginModal from "./components/adminNav/login/Login";
 
