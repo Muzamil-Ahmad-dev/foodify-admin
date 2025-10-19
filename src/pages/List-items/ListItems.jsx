@@ -32,7 +32,7 @@ export default function ListItemsPage() {
   const fetchItems = async () => {
     try {
       setLoading(true);
-      const res = await fetch("http://localhost:5000/api/menu");
+      const res = await fetch("https://1e20a7ed-cc85-497b-b510-b41debc2f036-00-1p28dt788ywz9.pike.replit.dev//api/menu");
       const data = await res.json();
 
       if (data.success) {
@@ -63,7 +63,7 @@ export default function ListItemsPage() {
     if (!confirm) return;
 
     try {
-      const res = await fetch(`http://localhost:5000/api/menu/${id}`, {
+      const res = await fetch(`https://1e20a7ed-cc85-497b-b510-b41debc2f036-00-1p28dt788ywz9.pike.replit.dev//api/menu/${id}`, {
         method: "DELETE",
       });
       const data = await res.json();

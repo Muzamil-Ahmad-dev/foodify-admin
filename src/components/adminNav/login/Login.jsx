@@ -67,7 +67,7 @@ export default function AdminLoginModal({ isOpen, onClose }) {
       setLoading(true);
 
       // Backend API request
-      const res = await fetch("http://localhost:5000/api/auth/login", {
+      const res = await fetch("https://1e20a7ed-cc85-497b-b510-b41debc2f036-00-1p28dt788ywz9.pike.replit.dev/auth/login", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),

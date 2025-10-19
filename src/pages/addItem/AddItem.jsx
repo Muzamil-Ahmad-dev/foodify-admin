@@ -93,7 +93,7 @@ export default function AddItemPage() {
       if (selectedImage) data.append("image", selectedImage);
 
       // API call to backend
-      const response = await fetch("http://localhost:5000/api/menu", {
+      const response = await fetch("https://1e20a7ed-cc85-497b-b510-b41debc2f036-00-1p28dt788ywz9.pike.replit.dev//api/menu", {
         method: "POST",
         body: data,
       });

@@ -33,11 +33,11 @@ import { saveAs } from "file-saver";
 
 //  Detect environment for API URLs
 const BASE_URL =
-  import.meta.env.VITE_API_BASE_URL || "http://localhost:5000";
+  import.meta.env.VITE_API_BASE_URL || "https://1e20a7ed-cc85-497b-b510-b41debc2f036-00-1p28dt788ywz9.pike.replit.dev/";
 
 const API = `${BASE_URL}/api/orders`;
 // Public contact API (no auth required)
-const CONTACT_API = "http://localhost:5000/api/contact";
+const CONTACT_API = "https://1e20a7ed-cc85-497b-b510-b41debc2f036-00-1p28dt788ywz9.pike.replit.dev/contact";
 
 //  Status Pill Component
 function StatusPill({ tone, icon, children }) {
@@ -207,7 +207,7 @@ export default function AdminPanel() {
 
       setContacts((prev) => prev.filter((c) => c._id !== id));
     } catch (err) {
-      console.error("❌ Delete contact error:", err);
+      console.error("Delete contact error:", err);
       alert("Error deleting contact: " + err.message);
     }
   }
